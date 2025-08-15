@@ -1,0 +1,15 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.1.0"
+  }
+}

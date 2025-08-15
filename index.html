@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/main.ts" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="flow" data-flow="tight">
+            <h1 class="section-title">Social Media Dashboard</h1>
+            <p class="text-muted font-semibold font-sm">Total Followers: 23,004</p>
+          </div>
+
+          <div class="flex items-center" data-gap="0.5">
+            <p>Dark Mode</p>
+            <label class="switch" aria-label="Toggle theme">
+              <input data-theme-toggle type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section social-cards">
+        <div class="wrapper">
+          <div class="grid-auto-fit" data-gap="2">
+            <div class="card items-center" data-bar="facebook">
+              <div class="flex items-center" data-gap="0.5">
+                <img class="card__icon" src="images/icon-facebook.svg" alt="Facebook" />
+                <p class="text-muted font-semibold">@nathanf</p>
+              </div>
+              <div class="text-center" style="--flow-space: 0.2em">
+                <h2 class="font-heading-regular font-bold">1987</h2>
+                <p class="font-light text-muted">Followers</p>
+              </div>
+              <div class="card__status" data-status="up">
+                <img src="images/icon-up.svg" alt="Up" />
+                <p>12 Today</p>
+              </div>
+            </div>
+
+            <div class="card items-center" data-bar="twitter">
+              <div class="flex items-center" data-gap="0.5">
+                <img class="card__icon" src="images/icon-twitter.svg" alt="Twitter" />
+                <p class="text-muted font-semibold">@realnathanf</p>
+              </div>
+              <div class="text-center" style="--flow-space: 0.2em">
+                <h2 class="font-heading-regular font-bold">1044</h2>
+                <p class="font-light text-muted">Followers</p>
+              </div>
+              <div class="card__status" data-status="up">
+                <img src="images/icon-up.svg" alt="Up" />
+                <p>99 Today</p>
+              </div>
+            </div>
+
+            <!-- Instagram Card -->
+            <div class="card items-center" data-bar="instagram">
+              <div class="flex items-center" data-gap="0.5">
+                <img class="card__icon" src="images/icon-instagram.svg" alt="Instagram" />
+                <p class="text-muted font-semibold">@nathanf</p>
+              </div>
+              <div class="text-center" style="--flow-space: 0.2em">
+                <h2 class="font-heading-regular font-bold">11k</h2>
+                <p class="font-light text-muted">Followers</p>
+              </div>
+              <div class="card__status" data-status="up">
+                <img src="images/icon-up.svg" alt="Up" />
+                <p>1099 Today</p>
+              </div>
+            </div>
+
+            <div class="card items-center" data-bar="youtube">
+              <div class="flex items-center" data-gap="0.5">
+                <img class="card__icon" src="images/icon-youtube.svg" alt="YouTube" />
+                <p class="text-muted font-semibold">Nathan F.</p>
+              </div>
+              <div class="text-center" style="--flow-space: 0.2em">
+                <h2 class="font-heading-regular font-bold">8239</h2>
+                <p class="font-light text-muted">Subscribers</p>
+              </div>
+              <div class="card__status" data-status="down">
+                <img src="images/icon-down.svg" alt="Down" />
+                <p>144 Today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Overview Section -->
+      <section class="section">
+        <div class="wrapper flow">
+          <h2>Overview - Today</h2>
+          <div class="grid-auto-fit">
+            <!-- Facebook Cards -->
+            <div class="card" data-bar="facebook">
+              <div class="flex justify-between">
+                <p class="text-muted">Page Views</p>
+                <img src="images/icon-facebook.svg" class="card__icon" alt="Facebook" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">87</h3>
+                <div class="card__status" data-status="up">
+                  <img src="images/icon-up.svg" alt="Up" />
+                  <p>3%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-bar="facebook">
+              <div class="flex justify-between">
+                <p class="text-muted">Likes</p>
+                <img src="images/icon-facebook.svg" class="card__icon" alt="Facebook" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">52</h3>
+                <div class="card__status" data-status="down">
+                  <img src="images/icon-down.svg" alt="Down" />
+                  <p>2%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Instagram Cards -->
+            <div class="card" data-bar="instagram">
+              <div class="flex justify-between">
+                <p class="text-muted">Likes</p>
+                <img
+                  src="images/icon-instagram.svg"
+                  al
+                  class="card__icon"
+                  t="Instagram"
+                  width="20"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">5,462</h3>
+                <div class="card__status" data-status="up">
+                  <img src="images/icon-up.svg" alt="Up" />
+                  <p>2,257%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-bar="instagram">
+              <div class="flex justify-between">
+                <p class="text-muted">Profile Views</p>
+                <img
+                  src="images/icon-instagram.svg"
+                  al
+                  class="card__icon"
+                  t="Instagram"
+                  width="20"
+                />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">52k</h3>
+                <div class="card__status" data-status="up">
+                  <img src="images/icon-up.svg" alt="Up" />
+                  <p>1,375%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Twitter Cards -->
+            <div class="card" data-bar="twitter">
+              <div class="flex justify-between">
+                <p class="text-muted">Retweets</p>
+                <img src="images/icon-twitter.svg" class="card__icon" alt="Twitter" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">117</h3>
+                <div class="card__status" data-status="up">
+                  <img src="images/icon-up.svg" alt="Up" />
+                  <p>303%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-bar="twitter">
+              <div class="flex justify-between">
+                <p class="text-muted">Likes</p>
+                <img src="images/icon-twitter.svg" class="card__icon" alt="Twitter" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">507</h3>
+                <div class="card__status" data-status="up">
+                  <img src="images/icon-up.svg" alt="Up" />
+                  <p>553%</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- YouTube Cards -->
+            <div class="card" data-bar="youtube">
+              <div class="flex justify-between">
+                <p class="text-muted">Likes</p>
+                <img src="images/icon-youtube.svg" class="card__icon" alt="YouTube" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">107</h3>
+                <div class="card__status" data-status="down">
+                  <img src="images/icon-down.svg" alt="Down" />
+                  <p>19%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-bar="youtube">
+              <div class="flex justify-between">
+                <p class="text-muted">Total Views</p>
+                <img src="images/icon-youtube.svg" class="card__icon" alt="YouTube" width="20" />
+              </div>
+              <div class="flex justify-between items-end">
+                <h3 class="font-bold">1,407</h3>
+                <div class="card__status" data-status="down">
+                  <img src="images/icon-down.svg" alt="Down" />
+                  <p>12%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Hossein Ensafi</a>.
+    </div>
+  </body>
+</html>
