@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build"
+    "build": "vite build"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
     "vite": "^7.1.0"
   }
